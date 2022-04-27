@@ -333,6 +333,7 @@ text-shadow:
   }
   .cajaPregunta{
     font-size: 2.5em ;
+    padding: 20px;
   }
   .opcion{
     margin-top: 10px;
@@ -343,7 +344,6 @@ text-shadow:
   }
   .animated-shadow {
   font-size: 3em ;
-  margin: 15px;
   }
   .modall p{
     font-family: 'Share Tech Mono', monospace;
