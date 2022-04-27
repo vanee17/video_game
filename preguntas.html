@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="preguntas.css">
+    <title>PREGUNTAS</title>
+</head>
+<body>
+    <div class="col-12 col menu">
+        <div class="jugador"><a href="index.html">---></a></div>
+        <div><audio autoplay loop controls src="audio/audio.mp3.mp3"></audio></div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col cuadro">
+                <div class="jugador">JUGADOR: <span id="jugador"></span></div>
+                <div class="jugador">VIDAS: <span id="vida"></span>/3</div>
+            </div>
+            <div class="bg-5 col-12 cajaPregunta" id="pregunta">AQUI VA LA PREGUNTA</div>
+            <div class="col-12 col-md-6 opciones">
+                <div class="opcion" id="opcion_1" onclick="opcionSeleccionada(0)">opcion1</div>
+            </div>
+            <div class="col-12 col-md-6 opciones">
+                <div class="opcion" id="opcion_2" onclick="opcionSeleccionada(1)">opcion2</div>
+            </div>
+            <div class="col-12 col-md-6 opciones">
+                <div class="opcion" id="opcion_3" onclick="opcionSeleccionada(2)">opcion3</div>
+            </div>
+            <div class="col-12 col-md-6 opciones">
+                <div class="opcion" id="opcion_4" onclick="opcionSeleccionada(3)">opcion4</div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="modal1" class="modalG d-none">
+        <div class="modall" >
+            <h1 class="animated-shadow" >GAME OVER</h1>
+            <p><span id="jugador1"></span> Tu puntaje es: <span id="puntaje"></span></p>
+            <a href="index.html"><button>salir</button></a>
+        </div>
+    </div>
+    <div id="modal2" class="modalG d-none">
+        <div class="modall">
+            <h1 class="animated-shadow" >TERMINO EL JUEGO</h1>
+            <p><span id="jugador2"></span> Tu puntaje es: <span id="puntaje2"></span></p>
+            <a href="index.html"><button>salir</button></a>
+        </div>
+    </div>
+    <div id="modal3" class="modalG">
+        <div class="modall">
+            <label for="">
+                <input id="nombre" type="text" placeholder="INGRESA TU NOMBRE">
+                <br>
+                <button onclick="guardarNombre()">JUGAR</button>
+            </label>
+        </div>
+    </div>
+    <script src="preguntas.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* Cool infinite background scrolling animation.
+ * Twitter: @kootoopas
+ */
+/* Exo thin font from Google. */
+@import url(https://fonts.googleapis.com/css?family=Exo:100);
+/* Background data (Original source: https://subtlepatterns.com/grid-me/) */
+/* Animations */
+@-webkit-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling-reverse {
+  100% {
+    background-position: 50px 50px;
+  }
+}
+@-webkit-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-moz-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@-o-keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+@keyframes bg-scrolling {
+  0% {
+    background-position: 50px 50px;
+  }
+}
+/* Main styles */
+body {
+  color: #999;
+  font: 400 16px/1.5 exo, ubuntu, "segoe ui", helvetica, arial, sans-serif;
+  text-align: center;
+  /* img size is 50x50 */
+  background: url("img/body-gameverde.png") repeat 0 0;
+  -webkit-animation: bg-scrolling-reverse .92s infinite;
+  /* Safari 4+ */
+  -moz-animation: bg-scrolling-reverse .92s infinite;
+  /* Fx 5+ */
+  -o-animation: bg-scrolling-reverse .92s infinite;
+  /* Opera 12+ */
+  animation: bg-scrolling-reverse .92s infinite;
+  /* IE 10+ */
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+.titulo{
+    max-width: 700px;
+    border: 2px solid white;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    text-align: center;
+    color: aliceblue;
+    background-color: #0a020c;
+    padding: 50px;
+    box-shadow: inset 0 0 5px 5px #7D0099, 0 0 5px 5px #7D0099;
+}
+.titulo h2{
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 2em;
+    color:aliceblue;
+    text-shadow: 1px 1px 2px black, 0 0 1em #18E600, 0 0 0.2em #18E600;
+}
+.animated-shadow {
+    color: #ffffff;
+	font-size: 4em ;
+    font-family: 'VT323', monospace;
+	letter-spacing: 7px;
+	text-align: center;
+	width: 100%;
+    margin-bottom: 15px;
+	animation: move linear 3000ms infinite;
+	z-index: 2
+	}
+	/*Animación para rotar las sombras*/
+	@keyframes move {
+	    0% {
+	        text-shadow:
+	        4px -4px 0 #7D0099,
+	        3px -3px 0 #7D0099,
+	        2px -2px 0 #7D0099,
+	        1px -1px 0 #7D0099,
+	        -4px 4px 0 #18E600,
+	        -3px 3px 0 #18E600,
+	        -2px 2px 0 #18E600,
+	        -1px 1px 0 #18E600
+	    ;
+	  }
+	  25% {
+	    text-shadow:
+	    -4px -4px 0 #18E600,
+	    -3px -3px 0 #18E600,
+	    -2px -2px 0 #18E600,
+	    -1px -1px 0 #18E600,
+	    4px 4px 0 #7D0099,
+	    3px 3px 0 #7D0099,
+	    2px 2px 0 #7D0099,
+	    1px 1px 0 #7D0099
+	    ;
+	}
+	50% {
+	    text-shadow:
+	    -4px 4px 0 #7D0099,
+	    -3px 3px 0 #7D0099,
+	    -2px 2px 0 #7D0099,
+	    -1px 1px 0 #7D0099,
+	    4px -4px 0 #18E600,
+	    3px -3px 0 #18E600,
+	    2px -2px 0 #18E600,
+	    1px -1px 0 #18E600
+	    ;
+	}
+	75% {
+	    text-shadow:
+	    4px 4px 0 #18E600,
+	    3px 3px 0 #18E600,
+	    2px 2px 0 #18E600,
+	    1px 1px 0 #18E600,
+	    -4px -4px 0 #7D0099,
+	    -3px -3px 0 #7D0099,
+	    -2px -2px 0 #7D0099,
+	    -1px -1px 0 #7D0099
+	    ;
+}
+100% {
+	text-shadow:
+	    4px -4px 0 ,
+	    3px -3px 0 #7D0099,
+	    2px -2px 0 #7D0099,
+	    1px -1px 0 #7D0099,
+	    -4px 4px 0 #18E600,
+	    -3px 3px 0 #18E600,
+	    -2px 2px 0 #18E600,
+	    -1px 1px 0 #18E600
+        ;
+	}
+	}
+.inicio{
+    max-width: 500px;
+    margin: auto;
+}
+.inicio input{
+    max-width: 300px;
+    width: 400px;
+    height: 40px;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1em;
+    color: #18E600;
+    text-shadow: 1px 1px 2px black, 0 0 1em #18E600, 0 0 0.2em #18E600;
+    background-color: #0a020c;
+    border: solid 1px aliceblue;
+    box-shadow: inset 0 0 5px 2px #7D0099, 0 0 5px 2px #7D0099;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+}
+.inicio button{
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    min-height: 40px;
+    padding-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: 'Share Tech Mono', monospace;
+    font-size: 1em;
+    margin-top: 60px;
+    border: solid 1px aliceblue;
+    text-shadow: 1px 1px 2px black, 0 0 1em #7D0099, 0 0 0.2em #7D0099;
+    background-color: #0a020c;
+    box-shadow: inset 0 0 5px 2px #7D0099, 0 0 5px 2px #7D0099;
+    cursor: pointer;
+    color: #7D0099;
+}
+.inicio a{
+  text-decoration: none;
+}
+.inicio button:hover{
+  color: #18E600;
+  box-shadow:0 0 10px #7D0099, 0 0 20px #7D0099, 0 0 30px #7D0099;
+  background-color:#7D0099;
+  border: none;
+}
+audio{
+  width: 100px;
+  background-color:#17e60071;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+@media (max-width:800px) {
+  .animated-shadow {
+	  font-size: 3em ;
+	}
+}
